@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Site</title>
+  <style>
+    .head{
+      border-bottom: 2px solid rgb(253, 253, 253);
+    }
+    .body{
+      background: linear-gradient( 320deg, rgb(39, 169, 255), rgb(255, 51, 51),rgb(251, 255, 19));
+    }
+    .card{
+      background-color: rgb(165, 66, 66);
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .color{
+      color: rgb(54, 2, 243);
+    }
+    .instagram{
+     color: rgb(156, 11, 120);
+    }
+    .youtube{
+      color:red;
+    }
+    .vk{
+      color:blue;
+    }
+    .google{
+      font-size: 50pt;
+    }
+    .img{
+      border-radius: 0 100px 0 100px;
+    }
+  </style>
+</head>
+<body class="body">
+  <h1 id="up">Формы</h1>
+
+  <form>
+
+    <div>
+      <label for="text">Text</label>
+      <input type="text" id="text" value="Введите текст" readonly>
+      
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Введите email">
+      
+    </div>
+
+    <div>
+      <label for="password">Password </label>
+      <input type="password" id="password" minlength="5" maxlength="7">
+      
+    </div></tr>
+
+    <div>
+      <label for="number">Число</label>
+      <input type="number" id="number" min="0">
+    </div>
+
+    <div>
+      <label for="range">Range</label>
+      <input type="range" id="range" min="0" max="10" step="1">
+    </div>
+
+    <div>
+      <label for="date">Date</label>
+      <input type="date" id="date">
+    </div>
+
+    <div>
+      <label for="color">Число</label>
+      <input type="color" id="color">
+    </div>
+
+    <div>
+      <label for="message">Message</label>
+      <br>
+      <textarea name="" id="Message" cols="15" rows="5"></textarea>
+    </div>
+
+    <div>
+      <label for="sex">Your Gender</label>
+      <select id="sex">
+        <option value="">Man</option>
+        <option value="">Woman</option>
+        <option value="text"> Другое </option>
+      </select>
+    </div>
+    
+    <div>
+      <label for="">Количество работ</label>
+      <input type="radio" name="work"> 1
+      <input type="radio" name="work"> 2
+      <input type="radio" name="work"> 5
+      <input type="radio" name="work"> 10+
+    </div>
+
+    <div>
+      <label for="">Любимая еда</label>
+      <input type="checkbox" name="food"> Мясо
+      <input type="checkbox" name="food"> Картошка
+      <input type="checkbox" name="food"> Хлеб
+      <input type="checkbox" name="food"> Молоко
+    </div>
+
+    <input type="submit" value="Отправить форму"> <!--Одинаковые вещи, но лучше писать через кнопку-->
+    <button type="submit">Отправить форму</button><!--Кнопка отправляет форму админу-->
+
+ <form action="/">
+<div><p>
+  <label for="Name">Ваше Имя:</label>
+  <input type="text" id="Name" placeholder="Введите имя"> 
+  <br>
+  <label for="email1">Ваш Email:</label>
+  <input type="email" id="email1" placeholder="Введите Email">
+  <label for="comment"></label>
+  <br>
+  <label for="comment">Оставить коментарий:</label><br>
+  <textarea name="" id="comment" cols="29" rows="5" placeholder="Ваш коментарий..."></textarea>
+  <br>
+  <button type="submit">Отправить!</button>
+  </p>
+</div>
+<div>
+  <h1>Заголовки, парагров, подчёркивание и enter</h1>
+    <h2>Alex</h2>
+    <p>I am <strong>good</strong> boy. <br>
+      I like <em>programm</em>
+      <hr>
+    </p>
+  <h1 id="center">Ссылки и картинки</h1>
+    <a class="google" href="https://google.com" target="_blank"><strong> Google</strong></a>
+    <br>
+  <p>
+    <img src="" alt="Пока нет картинок">
+  </p>
+
+  <hr>
+
+  <h1>Списки</h1>
+
+  <ol>
+    <li>Элемент_1</li>
+    <li>Элемент_2</li>
+    <li>Элемент_3</li>
+    <li>Элемент_4</li>
+    <li>Элемент_5</li>
+  </ol>
+
+  <ul>
+    <li>Элемент_А</li>
+    <li>Элемент_B</li>
+    <li>Элемент_C</li>
+    <li>Элемент_D</li>
+  </ul>
+
+
+  <h2>Вложеные списки</h2>
+  <ul>
+    <li>Элемент_А
+    <ul> 
+      <li type="I">Элемент_B вложен в А</li> 
+      <li type="I">Элемент_C вложен в А</li>
+    </ul></li>
+    <li>Элемент_D</li>
+  </ul>
+
+  <h2>Emmet</h2>
+
+  <!--ul>li{element $}*5 - Введя это получим результат ниже-->
+  <ul>
+    <li>Element 1</li>
+    <li>Element 2</li>
+    <li>Element 3</li>
+  </ul>
+  <hr>
+
+  <h1>Таблицы</h1>
+
+  <table width="200">
+    <thead>
+      <tr> <!--строка-->
+        <th>Name</th> <!--Столбец_1 th-жирным -->
+      <th>Age</th>  <!--Столбец_2-->
+        <th>Work</th> <!--Столбец_3-->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Alex</td><!--td-обычным-->
+        <td>21</td>
+        <td>Hack=)</td>
+      </tr>
+        <tr>
+          <td>Alexs</td><!--td-обычным-->
+          <td>12</td>
+          <td>Hackk=)</td>
+        </tr>
+    </tbody>
+  </table><hr>
+</div>
+
+<div>
+  <h1>Blocks</h1>
+
+  <p style="border: 2px solid blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <strong> Cumque voluptatum magnam natus,</strong> ipsam maiores nesciunt
+    earum. Excepturi est, <em> eveniet eligendi animi expedita asperiores facilis molestiae,</em> amet numquam, nesciunt quas
+    illo!</p>
+
+  <P style="border: 2px solid blue;">Lorem ipsum, <span style="border: 4px solid purple;"> dolor sit amet</span> consectetur adipisicing elit.
+    Ad hic deleniti unde sint illo consequuntur.</P>
+
+  <a href="#" style="border: 4px solid red;">Lorem, ipsum dolor.</a>
+
+  <div style="border: 1px solid rgb(110, 117, 0);">
+    <a href="#" style="border: 3px solid green;">Lorem, ipsum.</a>
+  </div>
+
+</div>
+
+<div>
+    <hr>
+  <header id="header" class="header">
+    <h2>Site</h2>
+  </header>
+
+
+  <nav id="navigation">
+    <ul>
+      <li><a href="#up" target="_blank"> Open a website on a new page</a></li>
+      <li><a href="#center"> Center page</a></li>
+      <li><a href="#up"> The beginning of the page</a></li>
+    </ul>
+  </nav>
+
+  <hr>
+
+  <section>
+    <article id="block1" class="card">
+      <h3>Block 1</h3>
+      <p>Lorem, ipsum dolor <span class="color">sit amet consectetur</span> adipisicing elit.
+        Porro, fugit.</p>
+    </article>
+
+    <article id="block2" class="card">
+      <h3>Block 2</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Porro, fugit.</p>
+    </article>
+  </section>
+
+  <hr><br>
+  <img class="img" src="imgs/fon.jpg" alt="" style="height: 350px; width: 350px;">
+  <hr><br>
+
+  <div>
+    <ul  id="footer" class="footer">
+      <li class="instagram">Instagram</li>
+      <li class="youtube">YouTube</li>
+      <li class="vk">VK</li>
+    </ul>
+  </div>
+
+  <!-- div.= <div class=""></div> -->
+</div>
+
+</form>
+
+  </form>
+
+</body>
+</html>
